@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correct = 'Admin@123'
+        let x = 0
+        for(i = 0; i<=2; i++){
+            let promptx = prompt('Enter Your Password')
+            if (promptx === correct){
+                break
+            }
+            else{
+                alert('Try again')
+            }
+            x+=1
+        }
+        if(x = 2){
+            alert('You ran out of tries')
+        }
+    </script>
+</body>
+</html>

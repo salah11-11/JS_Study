@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correct_email = 'admin@mail.com'
+        let correct_pass = 'admin@123'
+        let x = 0 
+        for(i=0; i<=2; i++){
+        let prompt1 = prompt('Enter email')
+        let prompt2 = prompt('Enter password')
+        if(prompt1===correct_email && prompt2===correct_pass){
+            alert('Access granted')
+            break
+        }
+        else if(prompt1!=correct_email || prompt2!=correct_pass){
+            alert(`Email or password is not correct try again you have ${2-i} attempts left`)
+        }
+    }
+    </script>
+</body>
+</html>

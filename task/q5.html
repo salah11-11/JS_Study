@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let varx = prompt('Enter first number');
+        let vary = prompt('Enter second number');
+        let varz = prompt('Enter third number');
+        parseFloat(varx);
+        parseFloat(vary);
+        parseFloat(varz);
+        if(varx>vary && varx>varz){
+            alert('first number is the largest')
+        }
+        else if(vary > varx && vary > varz){
+            alert('second number is the largest')
+        }
+        else if(varz > varx && varz > vary){
+            alert('Third number is the largest')
+        }
+        else if(varz===varx && varz===vary){
+            alert('All three numbers are equal')
+        }
+    </script>
+</body>
+</html>

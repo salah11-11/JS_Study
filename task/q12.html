@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let var1 = prompt('Enter number a');
+        let var2 = prompt('Enter number b');
+        let var3 = prompt('Enter number c');
+        let var4 = prompt('Enter number d');
+        Number(var1)
+        Number(var2)
+        Number(var3)
+        Number(var4)
+        if(var1>var2 && var1>var3 && var1>var4){
+            alert('a is the largest')
+        }
+        else if(var2 > Math.max(var1 , var3, var4)){
+            alert('b is the largest')
+        }
+        else if(var3 > Math.max(var1 , var2, var4)){
+            alert('c is the largest')
+        }
+        else if(var4 > Math.max(var1 , var2, var3)){
+            alert('d is the largest')
+        }
+        else{
+            alert('The numbers are equal')
+        }
+    </script>
+</body>
+</html>
