@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
-        let correct = 'Admin@123'
+        let correct;
+        correct = 'Admin123'
         for(i = 0; i<=2; i++){
-            let promptx = prompt('Enter Your Password')
-            if (promptx === correct)
-                alert('Access granted')
+            let user = prompt('Enter password')
+            if(user===correct){
+                alert('Access Granted')
                 break
             }
             else{
-                alert(`wrong password you have ${2-i} attempt(s) remaining`)
+                alert(`Wrong password you have ${2-i} attempt(s) remaining`)
             }
+        }
     </script>
 </body>
 </html>
