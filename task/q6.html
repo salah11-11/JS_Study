@@ -8,19 +8,15 @@
 <body>
     <script>
         let correct = 'Admin@123'
-        let x = 0
         for(i = 0; i<=2; i++){
             let promptx = prompt('Enter Your Password')
-            if (promptx === correct){
+            if (promptx === correct)
+                alert('Access granted')
                 break
             }
             else{
-                alert('Try again')
+                alert(`wrong password you have ${2-i} attempt(s) remaining`)
             }
-            x+=1
-        }
-        if(x = 2){
-            alert('You ran out of tries')
         }
     </script>
 </body>
