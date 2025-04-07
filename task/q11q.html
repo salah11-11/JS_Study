@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let var1 = parseInt(prompt('ENTER BIRTH YEAR'));
+        let var2 = parseInt(prompt('ENTER BIRTH MONTH'));
+        let var3 = parseInt(prompt('ENTER BIRTH DATE'));
+        let ty = parseInt(today.getFullYear());
+        let tm = today.getMonth();
+        let td = today.getDate();
+        let age_y = ty - var1
+        String(age_y)
+        let age_m = tm - var2
+        if(age_m < 0){
+            age_m = age_m*-1
+        }
+        String(age_m)
+        let age;
+        age = age_y+' years'+' '+age_m+' months'
+        alert(age)
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        input{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form id="myform">
+        <h2>Application Form</h2>
+        <input type="text" placeholder="name" id="name" required>
+        <br>
+        <input type="email" placeholder="email" id="email" required>
+        <br>
+        <input type="number" placeholder="phone number" id="number" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <script>
+        let form;
+        form = document.getElementById('myform');
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+            const name1 = document.getElementById("name").value;
+            const email = document.getElementById('email').value;
+            const number1 = document.getElementById('number').value;
+
+            alert(`Your name is ${name1}`);
+        })
+    </script>
+</body>
+</html>
